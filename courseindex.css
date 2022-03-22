@@ -1,0 +1,88 @@
+body{
+  background-image: url("purple-gradient.jpg");
+}
+
+#container{
+    margin: auto;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    font-style: bold;
+    font-style: italic;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-style: bold;
+  font-style: italic;
+}
+
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+ol {
+  color: white;
+  font-size: 20px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+  img.c2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 80%;
+  }
