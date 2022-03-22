@@ -9,28 +9,28 @@ body{
 }
 
 h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
     font-size: 65px;
 }
 
 h2 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 15px;
     font-style: italic;
 }
 
 h3 {
-    color: white;
+    color: black;
     font-size: 25px;
     font-style: bold;
     font-style: italic;
 }
 
 h4 {
-  color: white;
+  color: black;
   text-align: center;
   font-size: 25px;
   font-style: bold;
@@ -39,23 +39,23 @@ h4 {
 
 
 p {
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
 ol {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 a:link {
-    color: white;
+    color: black;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: gray;
+    color: white;
     background-color: transparent;
     text-decoration: none;
   }
@@ -86,3 +86,21 @@ a:link {
     height: 80%;
     width: 80%;
   }
+
+  .column {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+
+  .row::after {
+    box-sizing: border-box;
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Image column and row code taken from W3Schools
+  https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
