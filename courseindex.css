@@ -24,15 +24,35 @@ h2 {
 
 h3 {
     color: black;
-    font-size: 25px;
+    font-size: 26px;
     font-style: bold;
     font-style: italic;
+    
+}
+
+.stripe-1 {
+  color: white;
+  background: repeating-linear-gradient(
+    45deg,
+    #a260bc,
+    #a260bc 10px,
+    #8a4698 10px,
+    #8a4698 20px
+  );
+}
+
+  /* Stripe code taken from CSS-Tricks
+ https://css-tricks.com/stripes-css/ */
+
+.floated {
+  float: left; 
+  margin-right: 10px;
 }
 
 h4 {
   color: black;
   text-align: center;
-  font-size: 25px;
+  font-size: 26px;
   font-style: bold;
   font-style: italic;
 }
