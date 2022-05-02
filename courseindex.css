@@ -2,18 +2,48 @@ body{
   background-image: url("purple-gradient.jpg");
 }
 
+/* .icebreaker{
+  filter: hue-rotate(90deg);
+} */
+
 #container{
     margin: auto;
     width: 75%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    font-size: 65px;
+#header {
+  padding: 5px;
+  text-align: center;
+  background: #7300e6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
+
+#toc {
+  padding: 2px;
+  text-align: center;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  /*TYPE*/
+
+header {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  /* margin: 50mm; */
+}
+
+h1{
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 h2 {
     color: black;
@@ -27,17 +57,40 @@ h3 {
     font-size: 26px;
     font-style: bold;
     font-style: italic;
-    
+}
+
+h4 {
+  color: black;
+  text-align: center;
+  font-size: 26px;
+  font-style: bold;
+  font-style: italic;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+}
+
+ol {
+  color: black;
+  font-size: 20px;
+}
+
+li {
+  color: black;
+  font-size: 20px;
 }
 
 .stripe-1 {
   color: white;
   background: repeating-linear-gradient(
     45deg,
-    #a260bc,
-    #a260bc 10px,
-    #8a4698 10px,
-    #8a4698 20px
+    #7300e6,
+    #7300e6 10px,
+    #5900b3 10px,
+    #5900b3 20px
   );
 }
 
@@ -49,25 +102,7 @@ h3 {
   margin-right: 10px;
 }
 
-h4 {
-  color: black;
-  text-align: center;
-  font-size: 26px;
-  font-style: bold;
-  font-style: italic;
-}
-
-
-p {
-    color: black;
-    font-size: 20px;
-}
-
-ol {
-  color: black;
-  font-size: 20px;
-}
-
+/*LINKS*/
 a:link {
     color: black;
     background-color: transparent;
@@ -75,7 +110,7 @@ a:link {
   }
   
   a:visited {
-    color: white;
+    color: #610cc2;
     background-color: transparent;
     text-decoration: none;
   }
@@ -92,6 +127,46 @@ a:link {
     text-decoration: underline;
   }
   
+  /*IMAGES*/
+  .displayIMG{
+    transition: 2s;
+    filter:grayscale()
+  }
+
+  .displayIMG:hover{
+    transition: 2s; 
+    filter: none;
+  }
+
+  .showIMG{
+    transition: 2s;
+  }
+
+  img.default{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 50%;
+    width: 50%;
+  }
+
+  img.defaultEX{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 80%;
+    width: 80%;
+  }
+
+  img.defaultFloat{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 40%;
+    width: 40%;
+  }
+
   img.center {
     display: block;
     margin-left: auto;
@@ -99,13 +174,8 @@ a:link {
     width: 40%;
   }
 
-  img.c2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 80%;
-    width: 80%;
-  }
+
+  /* style =    border: solid black 1px;padding: 2px;" */
 
   .column {
     box-sizing: border-box;
@@ -114,13 +184,31 @@ a:link {
     padding: 5px;
   }
   
-
   .row::after {
     box-sizing: border-box;
     content: "";
     clear: both;
     display: table;
   }
+
+  canvas {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* .gray{
+    filter: grayscale();
+  }
+
+  .coloured{
+    width: 0;
+    overflow: hidden;
+  } */
+
 
   /* Image column and row code taken from W3Schools
   https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
